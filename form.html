@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <Style>
+        #para1{
+            color:red; 
+        } 
+        #para2{
+            color:red;
+        }
+        .error{
+            color:red; 
+        }
+    </Style>
+</head>
+<body>
+    <form onclick="return formvalidation()">
+        <label>username</label>
+        <input type="text"  id="input1" oninput="return formvalidation()">
+        <p id="para1"></p>
+        <label>password</label>
+        <input type="password" placeholder="enter password" id="input2" oninput="return formvalidation()">
+        <p id="para2"></p>
+        
+    </form> 
+     <button onclick="formvalidation();">submit</button> 
+
+         <br>
+         <br>
+     <form onsubmit="return validation2();">
+        <label>Email :</label>
+        <input type="text" id="email_input">
+        <p class="error" id="email_error"></p>
+
+        <label>Password :</label>
+        <input type="text" id="password_input2">
+        <p class="error" id="password_error2"></p>
+        <input type="submit">
+    </form>  
+    <Br>
+        <Br>
+
+<form onsubmit="return validation3();">
+    <label>username:-</label>
+    <input type="text" id="user_input">
+    <p class="error" id="userinput_error"></p> 
+    <input type="submit">
+</form>
+
+  
+   
+    
+    <script src="form.js"></script>
+</body>
+</html>
